@@ -24,3 +24,31 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+// Roboto Google Fonts
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,*::after,*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.scrollbar-width-none {
+  scrollbar-width: none;
+}
