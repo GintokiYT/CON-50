@@ -1,0 +1,92 @@
+.card-comentarios {
+  display: flex;
+  flex-direction: column;
+  margin: 48px 24px 0 24px;
+  gap: 30px;
+}
+
+.card-comentarios .card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEEEEE;
+
+  p {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.card-comentarios .card-comentario {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-weight: 400;
+  line-height: 24px;
+
+  .avatar {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+      color: #BDBDBD;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 16px;
+      color: #000000;
+      margin: 0;
+    }
+
+    .comentario {
+      display: flex;
+      flex-direction: row;
+      margin-top: 8px;
+    }
+
+    .tag {
+      background-color: #EBEBEB;
+      font-size: 16px;
+      color: #000000;
+      padding: 0px 8px;
+      border-radius: 20px;
+      margin-right: 5px;
+      font-weight: 400;
+    }
+
+    .tiempo {
+      font-size: 12px;
+      color: #9E9E9E;
+    }
+
+    .responder {
+      font-size: 16px;
+      color: #666666;
+      margin-top: 12px;
+    }
+  }
+}

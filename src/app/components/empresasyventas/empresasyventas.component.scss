@@ -1,0 +1,51 @@
+.card-empresa-ventas {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #666666;
+  margin: 48px 24px 0 24px;
+}
+
+.card-empresa-ventas .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #EEEEEE;
+
+  .precio {
+    text-align: right;
+    flex: 1;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.card-empresa-ventas .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+
+  .nombre {
+    color: #000000;
+    flex: 1;
+  }
+
+  .image {
+    display: flex;
+    width: 32px;
+    height: 32px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

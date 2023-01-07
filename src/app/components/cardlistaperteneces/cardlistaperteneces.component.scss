@@ -1,0 +1,42 @@
+.card-listaperteneces {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 48px 24px 102px 24px;
+  font-weight: 400;
+}
+
+.card-listaperteneces .card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  p {
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666666;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.card-listaperteneces .card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .tag {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .description {
+    font-size: 14px;
+    color: #666666;
+  }
+}

@@ -1,0 +1,71 @@
+.card-niveldeinteres {
+  margin: 48px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-niveldeinteres .card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEEEEE;
+
+  p {
+    font-weight: 400;
+    color: #00000099;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.card-niveldeinteres .card-item {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+
+  img {
+    width: 78px;
+    height: 261.65px;
+  }
+
+  .lista-nivel {
+    flex: 1;
+    align-items: flex-end;
+    padding: 16px 17px 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+
+    li {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 18px;
+      width: 100%;
+
+      p {
+        font-size: 16px;
+        color: #9E9E9E;
+        order: 1;
+      }
+
+      .radio {
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #E0E0E0;
+        margin: 2px;
+      }
+    }
+  }
+}

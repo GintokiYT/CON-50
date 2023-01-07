@@ -1,0 +1,79 @@
+.card-contacto {
+  margin: 48px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 64px;
+  height: 64px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info * {
+  margin: 0;
+  padding: 0;
+}
+
+.card-info .nombre {
+  font-size: 24px;
+  font-weight: 900;
+  color: #000000;
+  margin-top: 8px;
+}
+
+.card-info .telefono {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 2px;
+}
+
+.card-info .email {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 4px;
+}
+
+.card-info .usuario {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 8px;
+
+  img {
+    width: 23px;
+    height: 24px;
+  }
+  p {
+    font-size: 16px;
+    color: #666666;
+  }
+}
+
+.card-info .etiquetas {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 8px;
+
+  span {
+    font-family: var(--font-roboto);
+    color: #ffffff;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+}
+
+.card-info .etiquetas span:nth-child(1) {
+  background-color: #3C66FB;
+}
+
+.card-info .etiquetas span:nth-child(2) {
+  background-color: #F88078;
+}

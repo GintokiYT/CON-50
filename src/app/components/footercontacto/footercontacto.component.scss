@@ -1,0 +1,39 @@
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  border-top: 3px solid #F5F5F5;
+
+  .sub-menu {
+    display: flex;
+    flex-direction: row;
+    margin: 12px 16px 36px 16px;
+
+    .button-arrow {
+      width: 24px;
+      height: 24px;
+      border-right: 3px solid #EEEEEE;
+    }
+
+    p {
+      color: #9E9E9E;
+      margin-left: 21px;
+      flex: 1;
+    }
+
+    .button-plus {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 72px;
+      height: 24px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

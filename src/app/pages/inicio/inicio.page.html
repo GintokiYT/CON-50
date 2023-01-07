@@ -7,199 +7,20 @@
 
   <main class="main">
     <!-- Card Contacto -->
-    <div class="card-contacto">
-      <div class="card-image">
-        <img src="/assets/contacto.png" alt="Contacto">
-      </div>
-      <div class="card-info">
-        <h2 class="nombre">Carla Mamani</h2>
-        <p class="telefono">+51 943 786 708</p>
-        <p class="email">carla@gmail.com</p>
-        <div class="usuario">
-          <img src="/assets/avatar_undefined.svg" alt="Avatar sin definir">
-          <p>Jhordan Vásquez</p>
-        </div>
-        <div class="etiquetas">
-          <span>Cliente interno</span>
-          <span>Lead</span>
-        </div>
-      </div>
-    </div>
+    <app-cardcontacto></app-cardcontacto>
 
     <!-- Card Empresa y Ventas -->
-    <div class="card-empresa-ventas">
-      <div class="item-header">
-        <p class="titulo">EMPRESAS & VENTAS</p>
-        <p class="precio">S/27.8k</p>
-        <img src="/assets/menu_dots.svg" alt="Menu">
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="/assets/empresas/elishop.svg" alt="Elishop">
-        </div>
-        <p class="nombre">ELISHOP</p>
-        <p class="precio">S/3.8K</p>
-      </div>
-      <!-- Empresa 1 -->
-      <div class="item">
-        <div class="image">
-          <img src="/assets/empresas/empresa.svg" alt="Empresa">
-        </div>
-        <p class="nombre">GEOR</p>
-        <p class="precio">S/1.4K</p>
-      </div>
-      <!-- Empresa 2 -->
-      <div class="item">
-        <div class="image">
-          <img src="/assets/empresas/tesla.svg" alt="Tesla">
-        </div>
-        <p class="nombre">Ortiz Mayorista</p>
-        <p class="precio">S/12.7K</p>
-      </div>
-      <!-- Empresa 3 -->
-      <div class="item">
-        <div class="image">
-          <img src="/assets/empresas/empresa.svg" alt="Empresa">
-        </div>
-        <p class="nombre">High Studio</p>
-        <p class="precio">S/10.1K</p>
-      </div>
-      <!-- Empresa 4 -->
-      <div class="item">
-        <div class="image">
-          <img src="/assets/empresas/empresa.svg" alt="Empresa">
-        </div>
-        <p class="nombre">Corporación Reque</p>
-        <p class="precio">S/890</p>
-      </div>
-    </div>
+    <app-empresasyventas></app-empresasyventas>
 
     <!-- Comentarios -->
-    <div class="card-comentarios">
-      <div class="card-header">
-        <p>COMENTARIOS</p>
-        <img src="/assets/menu_dots.svg" alt="menu">
-      </div>
-      <!-- Sheyla Gavidia -->
-      <div class="card-comentario">
-        <div class="avatar">
-          <p>OP</p>
-        </div>
-        <div class="content">
-          <h2>Sheyla Gavidia</h2>
-          <div class="comentario">
-            <p><span class="tag">Oscar</span> Tengo todo listo, ya puedes revisar la información del cliente ya está disponible. <span class="tiempo">hace 1 seg</span></p>
-          </div>
-        </div>
-      </div>
-      <!-- Homero Lopez -->
-      <div class="card-comentario">
-        <div class="avatar">
-          <img src="/assets/homero_lopez.png" alt="Homero Lopez">
-        </div>
-        <div class="content">
-          <h2>Homero Lopez</h2>
-          <div class="comentario">
-            <p>Está perfecto 😊👍 <span class="tiempo">hace 1 seg</span></p>
-          </div>
-          <p class="responder">Responder</p>
-        </div>
-      </div>
-      <!-- Gerardo Ortiz -->
-      <div class="card-comentario">
-        <div class="avatar">
-          <img src="/assets/gerardo_ortiz.png" alt="Gerardo Ortiz">
-        </div>
-        <div class="content">
-          <h2>Gerardo Ortiz</h2>
-          <div class="comentario">
-            <p>Lorem ipsum dolor sit amet consectetur. Massa quis et porta ipsum duis diam facilisis. Nunc tortor amet et pellentesque sem sagittis semper in sapien.</p>
-          </div>
-          <p class="responder">1 respuestas</p>
-        </div>
-      </div>
-      <!-- Valentin Mamani -->
-      <div class="card-comentario">
-        <div class="avatar">
-          <img src="/assets/valentin_mamani.png" alt="Valentin Mamani">
-        </div>
-        <div class="content">
-          <h2>Valentín Mamani</h2>
-          <div class="comentario">
-            <p><span class="tag bg-principal-main text-white">Gerardo</span> Tengo todo listo, ya puedes revisar la información del cliente ya está disponible. <span class="tiempo">hace 1 seg</span> </p>
-          </div>
-          <p class="responder">Responder</p>
-        </div>
-      </div>
-    </div>
+    <app-cardcomentario></app-cardcomentario>
 
     <!-- Nivel de interes -->
-    <div class="card-niveldeinteres">
-      <div class="card-header">
-        <p>Nivel de interés</p>
-        <img src="/assets/menu_dots.svg" alt="Menu">
-      </div>
-      <div class="card-item">
-        <img src="/assets/interes.svg" alt="nivel de interes">
-        <ul class="lista-nivel">
-          <li>
-            <p>Alto</p>
-            <div class="radio"></div>
-          </li>
-          <li>
-            <p>Medio alto</p>
-            <div class="radio"></div>
-          </li>
-          <li class="bg-select-radio">
-            <p class="text-black">Medio</p>
-            <div class="radio select-radio"></div>
-          </li>
-          <li>
-            <p>Medio bajo</p>
-            <div class="radio"></div>
-          </li>
-          <li>
-            <p>Bajo</p>
-            <div class="radio"></div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <app-niveldeinteres></app-niveldeinteres>
 
     <!-- Lista a las que perteneces -->
-    <div class="card-listaperteneces">
-      <div class="card-header">
-        <p>Listas a las que pertenece</p>
-        <img src="/assets/menu_dots.svg" alt="Menu">
-      </div>
-      <div class="card-item">
-        <h2 class="titulo">Buyer gerente general</h2>
-        <div class="tag">
-          <span class="tag-principal">Autómatica</span>
-          <span class="tag-secundario">Contactos</span>
-        </div>
-        <p class="description">Pertenece desde el 25 nov 2022</p>
-      </div>
-
-      <div class="card-item">
-        <h2 class="titulo">Lista empresas pequeñas</h2>
-        <p class="description">Pertenece desde el 25 nov 2022</p>
-        <div class="tag">
-          <span class="tag-green">Manual</span>
-          <span class="tag-secundario">Contactos</span>
-        </div>
-      </div>
-    </div>
+    <app-cardlistaperteneces></app-cardlistaperteneces>
   </main>
-  <footer class="footer">
-    <div class="sub-menu">
-      <div class="button-arrow">
-        <img src="/assets/arrow_left_2.svg" alt="Arrow Left">
-      </div>
-      <p>Agrega un comentario</p>
-      <div class="button-plus">
-        <img src="/assets/plus.svg" alt="plus">
-      </div>
-    </div>
-  </footer>
+
+  <app-footercontacto></app-footercontacto>
 </ion-content>
