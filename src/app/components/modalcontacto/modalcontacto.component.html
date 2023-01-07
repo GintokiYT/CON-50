@@ -1,0 +1,21 @@
+<div
+  class="modal-contactos"
+  *ngIf="modalStatus === true"
+>
+  <div class="contactos">
+    <div class="items">
+      <div
+        class="item"
+        *ngFor="let contacto of contactos"
+      >
+        <div class="image">
+          <img [src]="contacto.image" [alt]="contacto.name">
+          <span *ngIf="contacto.status === true"></span>
+        </div>
+        <p>{{ contacto.name }}</p>
+      </div>
+    </div>
+  <div class="add-contacto">
+    <img src="/assets/cross.svg" alt="añadir contacto">
+  </div>
+</div>

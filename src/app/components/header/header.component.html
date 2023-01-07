@@ -1,0 +1,36 @@
+<header class="header">
+  <div class="menu">
+    <div class="icono">
+      <img
+        class="arrow-left-icon"
+        src="/assets/arrow_left.svg"
+        alt="arrow left"
+      />
+      <h2
+        class="sub-titulo"
+        *ngIf="subTitulo.length !== 0"
+      >Contactos</h2>
+    </div>
+    <div
+      class="contactos"
+      (click)="openModalContact()"
+    >
+      <div
+        [class]="contacto.clase"
+        *ngFor="let contacto of contactos"
+      >
+        <img
+          *ngIf="contacto.image.length > 0"
+          [src]="contacto.image"
+        >
+        <span
+          *ngIf="contacto.image.length === 0"
+        >OP</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<app-modalcontacto
+  [modalStatus]="modalStatus"
+></app-modalcontacto>

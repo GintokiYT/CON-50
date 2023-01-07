@@ -26,9 +26,11 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
-// Roboto Google Fonts
+// Variables Globales
 :root {
   --font-roboto: 'Roboto', sans-serif;
+  --principal-dark: #000000;
+  --texto-primario: #000000;
 }
 
 html {
@@ -51,4 +53,45 @@ img {
 
 .scrollbar-width-none {
   scrollbar-width: none;
+}
+
+.bg-principal-main {
+  background-color: #023AFF !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.select-radio {
+  border: 9px solid #FFB547 !important;
+  box-sizing: border-box !important;
+}
+
+.bg-select-radio {
+  background: linear-gradient(270deg, rgba(248, 163, 14, 0.15) 1.66%, rgba(248, 164, 14, 0) 99.85%) !important;
+  border-radius: 20px !important;
+  padding: 4px 4px !important;
+}
+
+.tag-principal {
+  background-color: #EBF4FE !important;
+  color: #023AFF !important;
+  padding: 2px 12px !important;
+  border-radius: 4px;
+}
+
+.tag-secundario {
+  color: #666666 !important;
+}
+
+.tag-green {
+  background-color: #F0FCF7 !important;
+  color: #3ED598 !important;
+  padding: 2px 12px !important;
+  border-radius: 4px;
 }
