@@ -12,9 +12,6 @@ selector: 'app-header',
 })
 export class HeaderComponent implements OnInit {
 
-  // Modal
-  modalStatus: boolean = false;
-
   // Agrega el titulo del header o dejalo vacio
   subTitulo: string = '';
 
@@ -41,6 +38,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(){}
 
   openModalContact() {
-    this.modalStatus = true;
+    const modalContacto = document.querySelector('.modal-contactos');
+
+    if(modalContacto?.classList.contains('open-modal')) {
+      modalContacto.classList.add('close-modal');
+      modalContacto.classList.remove('open-modal');
+    } else {
+      modalContacto?.classList.add('open-modal');
+      modalContacto?.classList.remove('close-modal');
+    }
   }
 }

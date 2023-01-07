@@ -1,4 +1,6 @@
 .modal-contactos {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,6 +11,7 @@
 }
 
 .contactos {
+  z-index: 1000;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -19,6 +22,11 @@
   animation: modalActive .5s ease;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.cabecera-vacia {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes modalActive {
@@ -93,4 +101,17 @@
 
 .close-modal {
   display: none;
+}
+
+.cerrarmodal {
+  animation: modalClose .35s ease;
+}
+
+@keyframes modalClose {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
 }

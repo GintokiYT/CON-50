@@ -1,7 +1,10 @@
 <div
-  class="modal-contactos"
-  *ngIf="modalStatus === true"
+  class="modal-contactos close-modal"
 >
+  <div
+    class="cabecera-vacia"
+    (click)="cerrarModal()"
+  ></div>
   <div class="contactos">
     <div class="items">
       <div

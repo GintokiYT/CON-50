@@ -13,8 +13,6 @@ interface Contacto {
 })
 export class ModalcontactoComponent implements OnInit {
 
-  @Input() modalStatus: boolean;
-
   // Lista de los contactos
   contactos: Contacto[] = [
     {
@@ -68,4 +66,16 @@ export class ModalcontactoComponent implements OnInit {
 
   ngOnInit() {}
 
+  cerrarModal() {
+    const modalContacto = document.querySelector('.modal-contactos');
+    const containerContactos = document.querySelector('.modal-contactos .contactos');
+
+    containerContactos?.classList.add('cerrarmodal')
+
+    setTimeout(() => {
+      modalContacto?.classList.add('close-modal');
+      modalContacto?.classList.remove('open-modal');
+      containerContactos?.classList.remove('cerrarmodal')
+    }, 300);
+  }
 }
