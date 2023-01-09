@@ -2,45 +2,54 @@
   <div class="item-header">
     <p class="titulo">EMPRESAS & VENTAS</p>
     <p class="precio">S/27.8k</p>
-    <img src="/assets/menu_dots.svg" alt="Menu">
+    <!-- <img
+      src="/assets/menu_dots.svg"
+      alt="Menu"
+      (click)="onClick()"
+    > -->
+    <ion-button id="click-trigger" class="button-modal">
+      <img src="/assets/menu_dots.svg" alt="Menu">
+    </ion-button>
+
+    <ion-popover trigger="click-trigger" triggerAction="click" class="modal-option">
+      <ng-template>
+        <ion-content>
+          <ul class="list-option">
+            <li>
+              <div class="content-image">
+                <img class="arrow-top" src="/assets/icon/arrow.svg" alt="Flecha Arriba">
+              </div>
+              <p>Mover arriba</p>
+            </li>
+            <li>
+              <div class="content-image">
+                <img src="/assets/icon/arrow.svg" alt="Flecha Abajo">
+              </div>
+              <p>Mover abajo</p>
+            </li>
+            <li>
+              <div class="content-image">
+                <img src="/assets/icon/trash.svg" alt="Quitar sección">
+              </div>
+              <p>Quitar sección</p>
+            </li>
+          </ul>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
+
+
   </div>
-  <div class="item">
+  <div
+    class="item"
+    *ngFor="let empresa of empresas"
+  >
     <div class="image">
-      <img src="/assets/empresas/elishop.svg" alt="Elishop">
+      <img
+        [src]="empresa.imagen"
+        [alt]="empresa.nombre">
     </div>
-    <p class="nombre">ELISHOP</p>
-    <p class="precio">S/3.8K</p>
-  </div>
-  <!-- Empresa 1 -->
-  <div class="item">
-    <div class="image">
-      <img src="/assets/empresas/empresa.svg" alt="Empresa">
-    </div>
-    <p class="nombre">GEOR</p>
-    <p class="precio">S/1.4K</p>
-  </div>
-  <!-- Empresa 2 -->
-  <div class="item">
-    <div class="image">
-      <img src="/assets/empresas/tesla.svg" alt="Tesla">
-    </div>
-    <p class="nombre">Ortiz Mayorista</p>
-    <p class="precio">S/12.7K</p>
-  </div>
-  <!-- Empresa 3 -->
-  <div class="item">
-    <div class="image">
-      <img src="/assets/empresas/empresa.svg" alt="Empresa">
-    </div>
-    <p class="nombre">High Studio</p>
-    <p class="precio">S/10.1K</p>
-  </div>
-  <!-- Empresa 4 -->
-  <div class="item">
-    <div class="image">
-      <img src="/assets/empresas/empresa.svg" alt="Empresa">
-    </div>
-    <p class="nombre">Corporación Reque</p>
-    <p class="precio">S/890</p>
+    <p class="nombre">{{ empresa.nombre }}</p>
+    <p class="precio">{{ empresa.valor }}</p>
   </div>
 </div>

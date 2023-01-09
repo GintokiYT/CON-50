@@ -49,3 +49,60 @@
     }
   }
 }
+
+.button-modal::part(native) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-option::part(backdrop) {
+  background: transparent;
+}
+
+.modal-option::part(content) {
+  width: 232px;
+  height: 152px;
+  border-radius: 4px;
+}
+
+.modal-option ion-content {
+
+  .list-option {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 16px;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      height: 24px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .content-image {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+
+      img {
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+  }
+}
+
+.arrow-top {
+  transform: rotate(180deg);
+}
