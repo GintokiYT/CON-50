@@ -2,34 +2,29 @@
   <div class="item-header">
     <p class="titulo">EMPRESAS & VENTAS</p>
     <p class="precio">S/27.8k</p>
-    <!-- <img
-      src="/assets/menu_dots.svg"
-      alt="Menu"
-      (click)="onClick()"
-    > -->
-    <ion-button id="click-trigger" class="button-modal">
-      <img src="/assets/menu_dots.svg" alt="Menu">
+    <ion-button id="modal-empresas" class="button-modal" mode="md">
+      <icon-menudots class="icon-menudots icon-20"></icon-menudots>
     </ion-button>
 
-    <ion-popover trigger="click-trigger" triggerAction="click" class="modal-option">
+    <ion-popover trigger="modal-empresas" triggerAction="click" class="modal-option">
       <ng-template>
-        <ion-content>
+        <ion-content class="modal-empresa">
           <ul class="list-option">
-            <li>
+            <li style="opacity: .3;">
               <div class="content-image">
-                <img class="arrow-top" src="/assets/icon/arrow.svg" alt="Flecha Arriba">
+                <icon-arrow class="icon-arrow rotate-90 icon-20"></icon-arrow>
               </div>
               <p>Mover arriba</p>
             </li>
             <li>
               <div class="content-image">
-                <img src="/assets/icon/arrow.svg" alt="Flecha Abajo">
+                <icon-arrow class="icon-arrow rotate-270 icon-20"></icon-arrow>
               </div>
               <p>Mover abajo</p>
             </li>
             <li>
               <div class="content-image">
-                <img src="/assets/icon/trash.svg" alt="Quitar sección">
+                <icon-trash class="icon-trash icon-20"></icon-trash>
               </div>
               <p>Quitar sección</p>
             </li>

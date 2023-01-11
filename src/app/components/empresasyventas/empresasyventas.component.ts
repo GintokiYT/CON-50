@@ -45,8 +45,4 @@ export class EmpresasyventasComponent implements OnInit {
 
   ngOnInit() {}
 
-  onClick() {
-    console.log('Diste click');
-  }
-
 }

@@ -17,7 +17,7 @@
   bottom: 0;
   width: 100%;
   max-height: 80vh;
-  background-color: #fff;
+  background-color: var(--fondoModal);
   border-radius: 10px 10px 0 0;
   animation: modalActive .5s ease;
   overflow-x: hidden;
@@ -73,7 +73,7 @@
   p {
     font-size: 16px;
     font-weight: 400;
-    color: var(--texto-primario);
+    color: var(--textPrincipal);
   }
 }
 

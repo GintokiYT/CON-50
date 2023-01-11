@@ -1,11 +1,14 @@
-<ion-header class="bg-white ion-no-border" mode="md">
-</ion-header>
+<ion-content class="content-principal">
 
-<ion-content>
+  <button
+    class="button-change"
+    (click)="cambiarColor()"
+  >Cambiar</button>
 
   <app-header></app-header>
 
   <main class="main">
+
     <!-- Card Contacto -->
     <app-cardcontacto></app-cardcontacto>
 
@@ -18,9 +21,13 @@
     <!-- Nivel de interes -->
     <app-niveldeinteres></app-niveldeinteres>
 
+    <!-- Correos -->
+    <app-cardcorreo></app-cardcorreo>
+
     <!-- Lista a las que perteneces -->
     <app-cardlistaperteneces></app-cardlistaperteneces>
   </main>
 
   <app-footercontacto></app-footercontacto>
+
 </ion-content>

@@ -4,7 +4,7 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "dev": "ionic serve --lab",
+    "dev": "ionic serve --lab --external",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

@@ -3,6 +3,7 @@
   flex-direction: column;
   margin: 48px 24px 0 24px;
   gap: 30px;
+  color: var(--textSecundario);
 }
 
 .card-comentarios .card-header {
@@ -10,7 +11,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid var(--lineaSeparadora);
 
   p {
     font-size: 10px;
@@ -22,6 +23,65 @@
     height: 20px;
   }
 }
+
+.button-modal::part(native) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-option::part(backdrop) {
+  background: transparent;
+}
+
+.modal-option::part(content) {
+  width: 232px;
+  height: 152px;
+  border-radius: 4px;
+}
+
+.modal-option ion-content {
+
+  .list-option {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 16px;
+    color: var(--textPrincipal);
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      height: 24px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .content-image {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+
+      img {
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+  }
+}
+
+.arrow-top {
+  transform: rotate(180deg);
+}
+
 
 .card-comentarios .card-comentario {
   display: flex;
@@ -58,7 +118,7 @@
 
     h2 {
       font-size: 16px;
-      color: #000000;
+      color: var(--textPrincipal);
       margin: 0;
     }
 
@@ -66,6 +126,10 @@
       display: flex;
       flex-direction: row;
       margin-top: 8px;
+
+      p {
+        color: var(--textPrincipal);
+      }
     }
 
     .tag {
@@ -80,13 +144,27 @@
 
     .tiempo {
       font-size: 12px;
-      color: #9E9E9E;
+      color: var(--textSecundario);
     }
 
     .responder {
       font-size: 16px;
-      color: #666666;
+      color: var(--textSecundario);
       margin-top: 12px;
     }
   }
+}
+
+.button-modal svg {
+  font-size: 20px;
+  stroke: var(--textSecundario);
+  fill: var(--textSecundario);
+}
+
+.modal-comentarios::part(background) {
+  background: var(--fondoModal);
+}
+
+.modal-comentarios::part(arrow) {
+  display: none;
 }

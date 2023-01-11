@@ -12,4 +12,16 @@ export class InicioPage implements OnInit {
   ngOnInit() {
   }
 
+  cambiarColor() {
+    const body: any = document.querySelector('body');
+
+    if(body?.classList.contains('light')) {
+      body.classList.add('dark');
+      body.classList.remove('light');
+    } else {
+      body.classList.remove('dark');
+      body.classList.add('light');
+    }
+  }
+
 }

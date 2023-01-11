@@ -1,11 +1,68 @@
 <footer class="footer">
   <div class="sub-menu">
     <div class="button-arrow">
-      <img src="/assets/arrow_left_2.svg" alt="Arrow Left">
+      <icon-next (click)="abrirModal1()" class="icon-next icon-24"></icon-next>
     </div>
     <p>Agrega un comentario</p>
     <div class="button-plus">
-      <img src="/assets/plus.svg" alt="plus">
+       <icon-plus (click)="abrirModal2()" class="icon-plus icon-24"></icon-plus>
     </div>
   </div>
 </footer>
+
+
+<div class="modal-footer-dos">
+
+<div class="item">
+  <div class="imagen">
+    <icon-next (click)="cerrarModal2()" class="icon-next icon-24 rotate-180" style="margin: 0 16px;"></icon-next>
+  </div>
+  <div class="content-items">
+    <div class="item">
+      <icon-company class="icon-company icon-24"></icon-company>
+      <p>Vincular empresa</p>
+    </div>
+    <div class="item user">
+      <icon-addlist class="icon-addlist icon-24"></icon-addlist>
+      <p>Agregar a lista</p>
+    </div>
+    <div class="item">
+      <icon-interest class="icon-interest icon-24"></icon-interest>
+      <p>Nivel de interés</p>
+    </div>
+    <div class="item">
+      <icon-mail class="icon-mail icon-24"></icon-mail>
+      <p>Envíar correo</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="modal-footer-uno">
+
+  <div class="item">
+    <div class="imagen">
+      <icon-next (click)="cerrarModal1()" class="icon-next icon-24 rotate-180" style="margin: 0 16px;"></icon-next>
+    </div>
+    <div class="content-items">
+      <div class="item">
+        <icon-share class="icon-share icon-24"></icon-share>
+        <p>Compartir</p>
+      </div>
+      <div class="item">
+        <icon-print class="icon-print icon-24"></icon-print>
+        <p>Imprimir</p>
+      </div>
+      <div class="item">
+        <icon-archived class="icon-archived icon-24"></icon-archived>
+        <p>Archivar</p>
+      </div>
+      <div class="item">
+        <icon-edit class="icon-edit icon-24"></icon-edit>
+        <p>Editar perfil</p>
+      </div>
+    </div>
+  </div>
+
+  </div>

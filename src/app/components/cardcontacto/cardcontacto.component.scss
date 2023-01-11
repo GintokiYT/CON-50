@@ -2,6 +2,14 @@
   margin: 48px 24px 0 24px;
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+
+.nombre {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--textPrincipal);
 }
 
 .card-image {
@@ -19,22 +27,25 @@
   padding: 0;
 }
 
-.card-info .nombre {
-  font-size: 24px;
-  font-weight: 900;
-  color: #000000;
-  margin-top: 8px;
-}
+// .card-info .nombre {
+//   font-size: 24px;
+//   font-weight: 900;
+//   color: var(--textPrincipal);
+//   transition: color .3s ease;
+//   margin-top: 8px;
+// }
 
 .card-info .telefono {
   font-size: 14px;
-  color: #666666;
+  color: var(--textSecundario);
+  transition: color .3s ease;
   margin-top: 2px;
 }
 
 .card-info .email {
   font-size: 14px;
-  color: #666666;
+  color: var(--textSecundario);
+  transition: color .3s ease;
   margin-top: 4px;
 }
 
@@ -51,7 +62,7 @@
   }
   p {
     font-size: 16px;
-    color: #666666;
+    color: var(--textSecundario);
   }
 }
 

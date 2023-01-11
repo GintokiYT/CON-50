@@ -1,30 +1,101 @@
 <div class="card-niveldeinteres">
   <div class="card-header">
     <p>Nivel de interés</p>
-    <img src="/assets/menu_dots.svg" alt="Menu">
+    <ion-button id="modal-nivel-interes" class="button-modal" mode="md">
+      <icon-menudots class="icon-menudots icon-20"></icon-menudots>
+    </ion-button>
+
+    <ion-popover trigger="modal-nivel-interes" triggerAction="click" class="modal-option">
+      <ng-template>
+        <ion-content class="modal-nivel-interes">
+          <ul class="list-option">
+            <li style="opacity: .3;">
+              <div class="content-image">
+                <icon-arrow class="icon-arrow rotate-90 icon-20"></icon-arrow>
+              </div>
+              <p>Mover arriba</p>
+            </li>
+            <li>
+              <div class="content-image">
+                <icon-arrow class="icon-arrow rotate-270 icon-20"></icon-arrow>
+              </div>
+              <p>Mover abajo</p>
+            </li>
+            <li>
+              <div class="content-image">
+                <icon-trash class="icon-trash icon-20"></icon-trash>
+              </div>
+              <p>Quitar sección</p>
+            </li>
+          </ul>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
   </div>
   <div class="card-item">
-    <img src="/assets/interes.svg" alt="nivel de interes">
+    <!-- Imagenes segun nivel de interes -->
+    <img
+      *ngIf="nivelInteres === 5"
+      src="/assets/interes/interes_alto.svg"
+      alt="Nivel de interes alto"
+    >
+    <img
+      *ngIf="nivelInteres === 4"
+      src="/assets/interes/interes_medio_alto.svg"
+      alt="Nivel de interes medio alto"
+    >
+    <img
+      *ngIf="nivelInteres === 3"
+      src="/assets/interes/interes_medio.svg"
+      alt="Nivel de interes medio"
+    >
+    <img
+      *ngIf="nivelInteres === 2"
+      src="/assets/interes/interes_medio_bajo.svg"
+      alt="Nivel de interes medio bajo"
+    >
+    <img
+      *ngIf="nivelInteres === 1"
+      src="/assets/interes/interes_bajo.svg"
+      alt="Nivel de interes bajo"
+    >
+
+    <!-- Fin de las imagenes -->
     <ul class="lista-nivel">
-      <li>
+      <li
+        class="nivel-interes"
+        [ngClass]="{'nivel-alto': nivelInteres === 5}"
+      >
         <p>Alto</p>
-        <div class="radio"></div>
+        <div class="radio" (click)="actualizarNivel(5)"></div>
       </li>
-      <li>
+      <li
+        class="nivel-interes"
+        [ngClass]="{'nivel-medio-alto': nivelInteres === 4}"
+      >
         <p>Medio alto</p>
-        <div class="radio"></div>
+        <div class="radio" (click)="actualizarNivel(4)"></div>
       </li>
-      <li class="bg-select-radio">
+      <li
+        class="nivel-interes"
+        [ngClass]="{'nivel-medio': nivelInteres === 3}"
+      >
         <p class="text-black">Medio</p>
-        <div class="radio select-radio"></div>
+        <div class="radio" (click)="actualizarNivel(3)"></div>
       </li>
-      <li>
+      <li
+        class="nivel-interes"
+        [ngClass]="{'nivel-medio-bajo': nivelInteres === 2}"
+      >
         <p>Medio bajo</p>
-        <div class="radio"></div>
+        <div class="radio" (click)="actualizarNivel(2)"></div>
       </li>
-      <li>
+      <li
+        class="nivel-interes nivel-bajo"
+        [ngClass]="{'nivel-bajo': nivelInteres === 1}"
+      >
         <p>Bajo</p>
-        <div class="radio"></div>
+        <div class="radio" (click)="actualizarNivel(1)"></div>
       </li>
     </ul>
   </div>

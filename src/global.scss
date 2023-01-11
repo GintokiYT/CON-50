@@ -41,6 +41,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  font-family: var(--font-roboto);
 }
 
 img {
@@ -65,17 +66,6 @@ img {
 
 .text-black {
   color: #000000 !important;
-}
-
-.select-radio {
-  border: 9px solid #FFB547 !important;
-  box-sizing: border-box !important;
-}
-
-.bg-select-radio {
-  background: linear-gradient(270deg, rgba(248, 163, 14, 0.15) 1.66%, rgba(248, 164, 14, 0) 99.85%) !important;
-  border-radius: 20px !important;
-  padding: 4px 4px !important;
 }
 
 .tag-principal {
@@ -104,3 +94,204 @@ img {
 .etiqueta-roja {
   background-color: #F88078;
 }
+
+
+// Modo dark
+.button-change {
+  position: absolute;
+  right: 20px;
+  top: 200px;
+  padding: 3px 8px;
+  font-size: 16px;
+  background: rgb(22, 116, 225);
+}
+
+.light {
+  --fondo: rgba(255, 255, 255, 1);
+  --principal: rgb(0, 0, 0);
+  --textPrincipal: rgb(0, 0, 0);
+  --textSecundario: rgba(0, 0, 0, 0.6);
+  --lineaSeparadora: rgb(238, 238, 238);
+  --fondoModal: rgba(255, 255, 255, 1);
+}
+
+.dark {
+  --fondo: rgba(5, 5, 15, 1);
+  --principal: rgb(255, 255, 255);
+  --textPrincipal: rgb(255, 255, 255);
+  --textSecundario: rgba(255, 255, 255, 0.6);
+  --lineaSeparadora: rgb(27, 31, 60);
+  --fondoModal: rgba(5, 5, 15, 1);
+}
+
+body {
+  background: var(--fondo);
+  transition: background .3s ease;
+}
+
+// Iconos SVG
+.icon-menudots {
+  display: grid;
+  place-content: center;
+
+  svg {
+    fill: var(--textSecundario);
+  }
+}
+
+.icon-arrow {
+  display: grid;
+  place-content: center;
+
+  path {
+    stroke: var(--principal);
+  }
+}
+
+.icon-trash {
+  display: grid;
+  place-content: center;
+
+  path {
+    stroke: var(--principal);
+  }
+}
+
+.icon-resolve {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-archive {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-next {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-share {
+  display: grid;
+  place-content: center;
+
+  svg {
+    fill: var(--principal);
+  }
+}
+
+.icon-print {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-archived {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-edit {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-company {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-addlist {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-interest {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-mail {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+.icon-plus {
+  display: grid;
+  place-content: center;
+
+  svg path{
+    stroke: var(--principal);
+  }
+}
+
+// Rotaciones (Para reutilizar iconos que se repiten pero rotan)
+.rotate-0 {
+  transform: rotate(0deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.rotate-360 {
+  transform: rotate(360deg);
+}
+
+// Clase tamaños para iconos
+.icon-20 {
+  font-size: 20px;
+}
+
+.icon-24 {
+  font-size: 24px;
+}
+

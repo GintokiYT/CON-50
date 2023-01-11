@@ -1,0 +1,8 @@
+.main {
+  background-color: var(--bgcolor);
+}
+
+.content-principal::part(background) {
+  background-color: var(--bgcolor);
+}
+

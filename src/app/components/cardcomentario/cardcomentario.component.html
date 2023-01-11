@@ -1,7 +1,36 @@
 <div class="card-comentarios">
   <div class="card-header">
     <p>COMENTARIOS</p>
-    <img src="/assets/menu_dots.svg" alt="menu">
+    <ion-button id="modal-comentarios" class="button-modal" mode="md">
+      <icon-menudots class="icon-menudots icon-20"></icon-menudots>
+    </ion-button>
+
+    <ion-popover trigger="modal-comentarios" triggerAction="click" class="modal-option">
+      <ng-template>
+        <ion-content class="modal-comentarios">
+          <ul class="list-option">
+            <li>
+              <div class="content-image">
+                <icon-arrow class="icon-arrow rotate-90 icon-20"></icon-arrow>
+              </div>
+              <p>Mover arriba</p>
+            </li>
+            <li>
+              <div class="content-image">
+                <icon-arrow class="icon-arrow rotate-270 icon-20"></icon-arrow>
+              </div>
+              <p>Mover abajo</p>
+            </li>
+            <li>
+              <div class="content-image">
+                <icon-resolve class="icon-resolve icon-20"></icon-resolve>
+              </div>
+              <p>Resolver todo</p>
+            </li>
+          </ul>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
   </div>
   <!-- Sheyla Gavidia -->
   <div class="card-comentario">

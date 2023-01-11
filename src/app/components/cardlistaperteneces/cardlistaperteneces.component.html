@@ -1,7 +1,30 @@
 <div class="card-listaperteneces">
   <div class="card-header">
     <p>Listas a las que pertenece</p>
-    <img src="/assets/menu_dots.svg" alt="Menu">
+    <ion-button id="modal-lista-perteneces" class="button-modal" mode="md">
+      <icon-menudots class="icon-menudots icon-20"></icon-menudots>
+    </ion-button>
+
+    <ion-popover trigger="modal-lista-perteneces" triggerAction="click" class="modal-option">
+      <ng-template>
+        <ion-content class="modal-lista-perteneces">
+          <ul class="list-option">
+            <li>
+              <div class="content-image">
+                <icon-arrow class="icon-arrow icon-20 rotate-90"></icon-arrow>
+              </div>
+              <p>Mover arriba</p>
+            </li>
+            <li style="opacity: .3;">
+              <div class="content-image">
+                <icon-arrow class="icon-arrow icon-20 rotate-270"></icon-arrow>
+              </div>
+              <p>Mover abajo</p>
+            </li>
+          </ul>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
   </div>
   <div class="card-item">
     <h2 class="titulo">Buyer gerente general</h2>

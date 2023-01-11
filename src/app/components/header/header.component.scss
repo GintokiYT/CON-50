@@ -15,8 +15,8 @@
 }
 
 .arrow-left-icon {
-  fill: var(--principal-dark);
-
+  transform: rotate(90deg);
+  fill: var(--principal);
 }
 
 .sub-titulo {
